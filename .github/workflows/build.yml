@@ -1,0 +1,26 @@
+name: Build Java8 Project
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+env:
+  JDK_VERSION: 8
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up JDK ${{ env.JDK_VERSION }}
+      uses: actions/setup-java@v2
+      with:
+        java-version: ${{ env.JDK_VERSION }}
+
+    - name: Build with Maven
+      run: mvn package
