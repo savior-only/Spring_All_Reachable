@@ -31,7 +31,7 @@ public class MemoryShellTab extends Tab {
         );
         ComboBox<String> comboBox = new ComboBox<>(comboBoxList);
         comboBox.setValue("哥斯拉");
-        Label labelpath = new Label("内存马类型");
+        Label labelpath = new Label("内存马路径");
         TextField textField = new TextField("/favicongmem.ico");
         Button button = new Button("Let's Go!");
         button.setPrefWidth(100);
