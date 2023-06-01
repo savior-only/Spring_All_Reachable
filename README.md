@@ -174,7 +174,7 @@ test
 
 [https://starchart.cc/0x727/SpringBootExploit](https://github.com/0x727/SpringBootExploit)
 
-https://github.com/whwlsfb/Spring_All_Reachable-godzilla-memshell
+[https://github.com/whwlsfb/Spring_All_Reachable-godzilla-memshell](https://github.com/whwlsfb/cve-2022-22947-godzilla-memshell)
 
 
 
