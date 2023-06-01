@@ -5,13 +5,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>Spring_Cloud_Gateway</artifactId>
-    <version>1.0</version>
+    <artifactId>Spring_All_Reachable</artifactId>
+    <version>2.0</version>
     <dependencies>
         <dependency>
             <groupId>cn.hutool</groupId>
             <artifactId>hutool-all</artifactId>
-            <version>5.5.9</version>
+            <version>5.8.17</version>
         </dependency>
     </dependencies>
 
