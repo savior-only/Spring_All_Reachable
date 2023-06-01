@@ -19,8 +19,8 @@ public class Check {
 //        String res = gateway.rce(host, "echo "+randomMD5);
 //        boolean status = res.contains(randomMD5);
         String res = gateway.rce(host, "whoami");
-        //res 是否为 null，如果不为 null，则通过 isEmpty() 方法判断res是否为空
-        boolean status = res != null && !res.isEmpty();
+        //通过 isEmpty() 方法判断res是否为空
+        boolean status = res != "漏洞利用失败！" && !res.isEmpty();
         return formatResult(status, "Spring Cloud Gateway 命令执行漏洞");
     }
 
