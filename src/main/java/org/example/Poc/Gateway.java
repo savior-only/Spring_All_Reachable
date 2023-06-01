@@ -63,11 +63,14 @@ public class Gateway {
             //去除\n及\t
             boolean status1 = result.contains("\\n");
             boolean status2 = result.contains("\\t");
+            boolean status3 = result.contains("\\r");
 
             if(status1){
                 result = result.replace("\\n","\n");
             }if (status2){
                 result = result.replace("\\t","\t");
+            }if (status3){
+                result = result.replace("\\r","\r");
             }
 //        System.out.println(result);
 
@@ -126,6 +129,7 @@ public class Gateway {
                     .timeout(60000)//超时，毫秒
                     .execute().body();
             HttpResponse res =  HttpRequest.get(url3)
+//                    .setHttpProxy("127.0.0.1",8888)
                     .header(Header.USER_AGENT,UserAgent)
                     .header(Header.CONTENT_TYPE,ContentType2)
                     .timeout(60000)//超时，毫秒
