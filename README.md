@@ -26,7 +26,7 @@
 
 # :clapper:使用方法
 
-### Spring Cloud Gateway命令执行（Spring_All_Reachable）
+### Spring Cloud Gateway命令执行（CVE-2022-22947）
 
 #### 漏洞描述
 
